@@ -49,3 +49,7 @@ public with sharing class CalloutService {
         }
     }
 }
+
+// Essa arquitetura de login funcionad perfeitamente, ela executa o login apenas uma vez por contexto de transação,
+// ou seja ela não faz o login mais de uma vez no mesmo contexto de transação, isso se da por que a cada contexto de 
+// transação todo estado da aplicação é resetado, a transação começa com um 'estado limpo'
